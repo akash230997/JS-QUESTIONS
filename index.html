@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 1 : INTERVIEW QUESTIONS</title>
+    
+</head>
+<body>
+    <h1>DAY 1 : INTERVIEW QUESTIONS</h1>
+    <h4>DIFF : replace concat arrays<br>
+no must use of apply , call ,  bind<br>
+replace copy method</h4>
+    <script>
+        
+let obj1 = {            //ADRESS 1
+    fname : 'AKASH',
+    lname : 'MEENA',
+}
+
+let obj2 = {            //ADRESS 2
+    
+}
+
+console.log(obj1 === obj2);//True or False ?            //passed by reference
+
+obj2 = obj1;
+
+// console.log(obj1 === obj2);//True or False ?          //passed by reference
+
+
+
+const A = 'AKASH';
+const B = 'AKASH';
+
+console.log(A === B);//passed by value
+
+
+// ARRAYS OR OBJECTS - THESEARE NON-PRM
+// PREM - STRING NUMB ETC ETC
+
+// EXPRESSIONS AND OPERATORS
+
+// SPREAD OPERATORS :
+// REST OPERATORS :
+
+// function annonymous(a,b,...c) {
+//     console.log(a,b);
+//     console.log(c);
+//     console.log(c[0]);
+//     console.log(c.length);
+//     console.log(c.indexOf('NAME4'));
+
+// }
+// annonymous('NAME1', 'NAME2', 'NAME3', 'NAME4','NAME5')
+
+function add(a,b,...c) {
+    let tot = 0;
+    for(var k of c){
+        tot += k +(a + b)
+        console.log(tot);
+    }
+    // console.log(tot + a + b);
+    // console.log(a);
+    // console.log(b);
+}
+add(1,2,3,4,5,6,7,8);
+// ES 6 => SPREAD OPERATORS
+console.log("SPREAD METHODS");
+        function spreadOP(...c){
+            console.log(c);
+        }
+        spreadOP(1,2,3,4,5);
+
+        console.log('DAY 1');
+
+// 
+
+// CLOSURES JAVASCRIPT
+// closures in action that is inner function can have access to the outer function variables as well as all the global variables.
+// A closure is the combination of a function and the lexical enviorment within which that fuction was declared.
+
+// closures in action that is inner functions can have access to the outer function variables as well as all the global variables.
+
+// The return statement does not executes the inner function - function is executed only when followed by (), but rather the return statement returns the entire body of the function.
+
+function outerF(a){
+        let b = 10;
+        function inner() {
+                console.log(a + b);
+        }
+        return inner;
+}
+let inner = outerF(10);
+inner();
+// console.log(inner);
+console.dir(inner); //dir => directry
+
+// Scope Chain & Lexical Scoping in JavaScript
+
+// Scope Chain-
+// Scope Chain- It is used to resolve the value of variable names in Javascript.
+// It is lexically defined (function ko kahan likha hai), we can check scope chain just by looking at the code.
+// At the top of scope chain, there is the global scope, which is the window object in the browser.
+// Lexical Scoping- a function that is lexically within another function get access to the scope of the outer function. (Inner functions can get access to their parent functions variables but the vice-versa is not true.)
+
+// JavaScript Functional Programming | First Class Citizen Function in JavaScript
+// // Function is a first-class citizen in javascript.
+// A programming language is said to have first class functions when the functions in that language are treated like any other variable.
+// 1. In Javascript, we can assign a function to a variable by using Function Expressions.
+
+// Function Contructure 
+// 
+
+
+
+
+
+
+    </script>
+</body>
+</html>
